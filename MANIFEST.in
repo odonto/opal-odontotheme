@@ -1,0 +1,2 @@
+recursive-include odontotheme/static *
+recursive-include odontotheme/templates *
