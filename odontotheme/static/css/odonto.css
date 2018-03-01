@@ -22,21 +22,21 @@ h2 {
 .btn-default small{
   color: #DDD;
 }
+.navbar-default a.navbar-brand {
+    color: white;
+}
+.navbar-default a.navbar-brand:hover {
+    color: #eee;
+}
 
-#side-nav.can-refer{
-    background-color: #5E52C4;
+#side-nav .navbar-nav{
+    width: 100%;
+}
+
+#side-nav {
     background-color: #487DBC;
 }
 
-#side-nav.can-assign{
-    background-color: #281A9A;
-    background-color: #3EBC99;
-}
-
-#side-nav.can-confirm{
-    background-color: #124c91;
-    background-color: #5E52C4;
-}
 
 .grey{
   color: #999;
@@ -54,25 +54,11 @@ h2 {
 
 .top-navbar {
     height: 90px;
-    background-color: rgb(72, 124, 188)
+    background-color: #487DBC;
 }
-
-.top-navbar.can-refer{
-  background-color: #5E52C4;
-  background-color: #487DBC;
+.nav-bar-search:before {
+    top: 10px;
 }
-
-
-.top-navbar.can-assign{
-    background-color: #281A9A;
-    background-color: #3EBC99;
-}
-
-.top-navbar.can-confirm{
-  background-color: #124c91;
-  background-color: #5E52C4;
-}
-
 .navbar-default .navbar-nav > li > a {
     color: white;
 }
@@ -166,9 +152,16 @@ h2 {
     border-bottom: 3px solid rgb(72, 124, 188);
 }
 
-.modal-header,
-.panel.panel-primary .panel-heading {
+.search-panel.panel.panel-primary .panel-heading {
+  background-color: transparent;
+  border-bottom: 3px solid rgb(72, 124, 188);
+}
+.modal-header{
     background-color: rgb(72, 124, 188);
+}
+.panel.panel-primary .panel-heading {
+    background-color: transparent;
+    border-bottom: 3px solid rgb(72, 124, 188);
 }
 
 tr.urgent {
@@ -179,7 +172,8 @@ tr.urgent {
     color: white;
     background-color: firebrick;
 }
-.form-horizontal .control-label {
+.form-horizontal .control-label,
+label{
   text-align: left;
   font-size: 18px;
   color: #999;
@@ -356,4 +350,19 @@ tr.urgent {
 
 table.patient-list {
   font-size: 16px;
+}
+
+.panel {
+  border: none;
+  background: none;
+  box-shadow: none;
+  border-radius: 0px;
+}
+.panel-footer {
+    background: none;
+}
+
+.panel.panel-primary .panel-heading.pathway-header{
+  background: none;
+  border-color:  rgb(72, 124, 188);
 }
