@@ -135,6 +135,10 @@ h2 {
     padding: 20px;
 }
 
+.patient-detail-heading h1, .patient-detail-heading h1 small{
+    color: rgb(72, 124, 188);
+}
+
 .odonto-detail {
     margin-top: 100px;
 /*     background-color: firebrick */
