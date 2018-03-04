@@ -12,7 +12,11 @@
     <center>
       <img src="{% static 'img/odonto_logo.png' %}" />
     </center>
-    <h2 class="text-center">log in to manage referrals</h2>
+    {% if ODONTO_LOGIN_MESSAGE %}
+    <h2 class="text-center">
+      {{ ODONTO_LOGIN_MESSAGE }}
+    </h2>
+    {% endif %}
     {% if form.errors %}
     <p class="lead text-center">Your username and password didn't match. Please try again.</p>
     {% endif %}
@@ -47,14 +51,6 @@
 
       <input type="hidden" name="next" value="{{ next }}" />
     </form>
-    <small>
-      <center>
-        <p class="text-muted">
-          Hint: Try linda / linda1
-        </p>
-
-      </center>
-    </small>
   </div>
 </div>
 <script type="text/javascript">
