@@ -47,6 +47,7 @@ h2 {
 }
 .btn-secondary, .btn-secondary:hover, .btn-secondary:focus{
     background-color: rgb(216, 143, 33);
+    color: white;
 }
 .navbar-default, .top-navbar {
     border-bottom: none;
@@ -135,8 +136,13 @@ h2 {
     padding: 20px;
 }
 
-.patient-detail-heading h1, .patient-detail-heading h1 small{
+.patient-detail-heading h1,
+.patient-detail-heading h1 small {
     color: rgb(72, 124, 188);
+
+}
+.panel.panel-primary .panel-heading{
+    color: black;
 }
 
 .odonto-detail {
@@ -163,6 +169,22 @@ h2 {
 .modal-header{
     background-color: rgb(72, 124, 188);
 }
+
+.panel.panel-primary .panel-heading a{
+    color: #f76c51;
+}
+.panel.panel-primary .panel-heading a:hover{
+    color: #f76c51;
+    text-decoration: underline;
+}
+.panel.panel-primary .panel-heading a.btn{
+    color: white;
+}
+.panel.panel-primary .panel-heading a.btn:hover{
+    color: white;
+    text-decoration: none;
+}
+
 .panel.panel-primary .panel-heading {
     background-color: transparent;
     border-bottom: 3px solid rgb(72, 124, 188);
